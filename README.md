@@ -1,4 +1,4 @@
-# Serverless document chat application
+# Zircontech's Serverless document chat application
 
 This sample application allows you to ask natural language questions of any PDF document you upload. It combines the text generation and analysis capabilities of an LLM with a vector search of the document content. The solution uses serverless services such as [Amazon Bedrock](https://aws.amazon.com/bedrock/) to access foundational models, [AWS Lambda](https://aws.amazon.com/lambda/) to run [LangChain](https://github.com/hwchase17/langchain), and [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) for conversational memory.
 
@@ -47,7 +47,7 @@ See the [accompanying blog post on the AWS Serverless Blog](https://aws.amazon.c
 Clone this repository:
 
 ```bash
-git clone git@github.com:aws-samples/serverless-pdf-chat.git
+git clone https://github.com/marceloacosta/serverless-pdf-chat.git
 ```
 
 ### Amazon Bedrock setup
@@ -64,7 +64,7 @@ If you want to change the default models or Bedrock Region, edit `Bedrock` and `
 
 ```python
 Bedrock(
-   model_id="anthropic.claude-v2", #adjust to use different model
+   model_id="anthropic.claude-3-sonnet-20240229-v1:0", #adjust to use different model
    region_name="us-east-1", #adjust if not using us-east-1
 )
 ```
