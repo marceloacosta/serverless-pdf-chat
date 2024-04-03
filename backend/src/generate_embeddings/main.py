@@ -53,6 +53,7 @@ def lambda_handler(event, context):
         vectorstore_cls=FAISS,
         embedding=embeddings,
     )
+    
 
     index_from_loader = index_creator.from_loaders([loader])
 
